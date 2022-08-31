@@ -1,0 +1,90 @@
+.page2_ice_cream {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  background-color: rgba(128, 128, 128, 0.418);
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  color: rgb(255, 166, 0);
+}
+
+hr {
+  color: white;
+  width: 1rem;
+  margin-right: 3rem;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.chevron-back-outline {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  width: 6rem;
+  height: 6rem;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+}
+
+.chevron-forward-outline {
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  width: 6rem;
+  height: 6rem;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+}
+
+@media screen and (max-width: 810px) {
+  .feature > h2 {
+    font-size: 1.2rem;
+  }
+
+  .feature > p {
+    font-size: 0.9rem;
+  }
+
+  .chevron-back-outline {
+    top: 80%;
+    left: 70%;
+  }
+
+  .chevron-forward-outline {
+    top: 80%;
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  main {
+    flex-direction: column;
+  }
+
+  .chevron-back-outline {
+    top: 100%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .chevron-forward-outline {
+    top: 100%;
+    width: 3rem;
+    height: 3rem;
+  }
+}
