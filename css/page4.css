@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ice_cream {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.9;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.384);
+}
+
+h1 {
+  text-decoration-line: underline;
+}
+
+.chevron-back-outline {
+  position: absolute;
+  top: 125%;
+  left: 5%;
+  width: 6rem;
+  height: 6rem;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+}
+
+h4 {
+  position: absolute;
+  top: 150%;
+  left: 80%;
+  padding: 1rem 2rem;
+  background-color: blue;
+  border: 1px solid white;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 820px) {
+  .chevron-back-outline {
+    top: 105%;
+  }
+
+  h4 {
+    width: 10rem;
+    top: 140%;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .chevron-back-outline {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  h4 {
+    width: 10rem;
+    top: 100%;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  h4 {
+    width: 8rem;
+    top: 102%;
+    left: 30%;
+  }
+}
